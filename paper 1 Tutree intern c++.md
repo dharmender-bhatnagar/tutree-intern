@@ -21,8 +21,7 @@ void print2Smallest(int arr[], int arr_size)
         cout<<" Invalid Input ";
         return;
     }
- 
-    first = second = INT_MAX;
+   first = second = INT_MAX;
     for (i = 0; i < arr_size ; i ++)
     {
         if (arr[i] < first)
@@ -30,7 +29,6 @@ void print2Smallest(int arr[], int arr_size)
             second = first;
             first = arr[i];
         }
-
         else if (arr[i] < second && arr[i] != first)
             second = arr[i];
     }
